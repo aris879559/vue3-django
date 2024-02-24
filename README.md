@@ -8,9 +8,9 @@
 ###  vue3+Django实现前后端分离的留言板项目
 
 ### 后端django启动方式
-···
+```
 python manage.py runserver 0.0.0.0:8080
-···
+```
 
 ### 前端 vue3启动方式
 ```
