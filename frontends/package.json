@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "uat": "vite uat",
+    "build": "vite build",
+    "build:uat": "vite build:uat",
   },
   "dependencies": {
     "axios": "^1.6.7",

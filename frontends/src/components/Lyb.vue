@@ -50,12 +50,13 @@
 
 <script>
 import axios from 'axios'
-import { reactive, onMounted, toRefs } from 'vue'
+import { reactive, onMounted, toRefs, inject } from 'vue'
 export default {
   name: 'Lyb',
   setup() {
     // 后台数据接口地址
-    let backend_url = "http://127.0.0.1:8080/api/lyb/";
+    // let backend_url = "http://127.0.0.1:8080/api/lyb/";
+    const backend_url = inject('backend_url');
     const lyb_obj = {
       url: '',
       title: '',
@@ -121,6 +122,7 @@ export default {
       editLyb,
       saveLyb,
       deleteLyb,
+      backend_url,
     };
   },
 }
